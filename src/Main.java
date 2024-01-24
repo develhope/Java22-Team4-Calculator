@@ -1,14 +1,28 @@
 public class Main {
 
     public static void main(String[] args) {
+ addition
+        int risultatoSomma = somma(6, 3);
+        System.out.println("Somma: " + risultatoSomma);
+    }
+    
+    public static int somma(int valore1, int valore2) {
+    return valore1 + valore2;
+    }
+} 
+
  sub2
         int risultatoSottrazione = sottrazione(6, 3);
         System.out.println("Sottrazione: " + risultatoSottrazione);
     }
 
     public static int sottrazione(int valore1, int valore2) {
+
           return valore1 - valore2;
         
+
+       
+
     }
 }
 
@@ -36,3 +50,4 @@ public class Main {
         }
     }
 }
+
