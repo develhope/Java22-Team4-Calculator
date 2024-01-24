@@ -1,6 +1,19 @@
 public class Main {
 
     public static void main(String[] args) {
+ sub2
+        int risultatoSottrazione = sottrazione(6, 3);
+        System.out.println("Sottrazione: " + risultatoSottrazione);
+    }
+
+    public static int sottrazione(int valore1, int valore2) {
+        int risultato = valore1 - valore2;
+        return risultato;
+    }
+}
+
+
+
         String operazione = "1:2=";
         String tipo = determinaTipoOperazione(operazione);
         System.out.println("Tipo di operazione: " + tipo);
