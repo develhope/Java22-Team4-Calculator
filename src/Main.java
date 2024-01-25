@@ -5,7 +5,14 @@ public static void main (String[] args){
         System.out.println(moltiplicationMethod(13,6));
         System.out.println(additionMethod(2,9));
         System.out.println(subtrationMethod(34,8));
+    addition
+    int risultatoSomma = somma(6, 3);
+    System.out.println("Somma: " + risultatoSomma);
+}
 
+    public static int somma(int valore1, int valore2) {
+        return valore1 + valore2;
+    }
     }
 
     //metodo che definisce la divisione:
@@ -26,6 +33,19 @@ public static void main (String[] args){
         return firstValue + secondValue;
 
     }
+}
+
+ sub2
+        int risultatoSottrazione = sottrazione(6, 3);
+        System.out.println("Sottrazione: " + risultatoSottrazione);
+    }
+
+    public static int sottrazione(int valore1, int valore2) {
+
+          return valore1 - valore2;
+
+
+
 
     //metodo che definisce la sottrazione:
     public static float subtrationMethod(float firstValue, float secondValue){
@@ -34,3 +54,29 @@ public static void main (String[] args){
 
     }
 }
+
+
+
+        String operazione = "1:2=";
+        String tipo = determinaTipoOperazione(operazione);
+        System.out.println("Tipo di operazione: " + tipo);
+    }
+
+    public static String determinaTipoOperazione(String operazione) {
+        if (operazione.contains("+")) {
+            return "SOMMA";
+        } else if (operazione.contains("-")) {
+            return "DIFFERENZA";
+        } else if (operazione.contains("*")) {
+            return "MOLTIPLICAZIONE";
+        } else if (operazione.contains("/")) {
+            return "DIVISIONE";
+        } else if (operazione.contains("^")) {
+            return "POTENZA";
+        } else {
+            // Tipo di operazione non riconosciuto
+            return "OPERAZIONE NON SUPPORTATA";
+        }
+    }
+}
+
