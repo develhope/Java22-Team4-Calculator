@@ -1,53 +1,27 @@
 public class Main {
+        public static void main(String[] args) {
+            int x = 5;
+            int y = 10;
+            System.out.println("il numero è " +x);
+            System.out.println("il numero è pari?");
+            checkEven(x);
+            System.out.println("i numeri moltiplicati sono pari a " +multipNumbers(x, y));
+        }
 
-    public static void main(String[] args) {
- addition
-        int risultatoSomma = somma(6, 3);
-        System.out.println("Somma: " + risultatoSomma);
-    }
-    
-    public static int somma(int valore1, int valore2) {
-    return valore1 + valore2;
-    }
-} 
+        //Un metodo che preveda un valore in ingresso e
+// determini se quel valore è pari o dispari
+// e restituendo il tipo.
+        static void checkEven(int x) {
+            if(x%2 == 0) {
+                System.out.println(x + " e' pari.");
+            }
+            else {
+                System.out.println(x + " e' dispari.");
+            }
+        }
 
- sub2
-        int risultatoSottrazione = sottrazione(6, 3);
-        System.out.println("Sottrazione: " + risultatoSottrazione);
-    }
-
-    public static int sottrazione(int valore1, int valore2) {
-
-          return valore1 - valore2;
-        
-
-       
-
-    }
-}
-
-
-
-        String operazione = "1:2=";
-        String tipo = determinaTipoOperazione(operazione);
-        System.out.println("Tipo di operazione: " + tipo);
-    }
-
-    public static String determinaTipoOperazione(String operazione) {
-        if (operazione.contains("+")) {
-            return "SOMMA";
-        } else if (operazione.contains("-")) {
-            return "DIFFERENZA";
-        } else if (operazione.contains("*")) {
-            return "MOLTIPLICAZIONE";
-        } else if (operazione.contains("/")) {
-            return "DIVISIONE";
-        } else if (operazione.contains("^")) {
-            return "POTENZA";
-        } else {
-            // Tipo di operazione non riconosciuto
-            return "OPERAZIONE NON SUPPORTATA";
+        //il metodo seguente restituisce il valore della moltiplicazione di due numeri
+        static int multipNumbers(int x, int y) {
+            return (x * y);
         }
     }
-}
-
