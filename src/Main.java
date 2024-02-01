@@ -1,7 +1,7 @@
 public class Main {
         public static void main(String[] args) {
-            int x = 5;
-            int y = 10;
+            int x = 6;
+            int y = 11;
             System.out.println("il numero è " +x);
             System.out.println("il numero è pari?");
             checkEven(x);
@@ -14,6 +14,8 @@ public class Main {
         static void checkEven(int x) {
             if(x%2 == 0) {
                 System.out.println(x + " e' pari.");
+                System.out.println(x + " e' pari, ma è un brutto numero.");
+                System.out.println(x + " e' pari, ma è forse è anche bello.");
             }
             else {
                 System.out.println(x + " e' dispari.");
