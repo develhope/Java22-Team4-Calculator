@@ -1,29 +1,37 @@
 public class Main {
-        public static void main(String[] args) {
-            int x = 6;
-            int y = 11;
-            System.out.println("il numero è " +x);
-            System.out.println("il numero è pari?");
-            checkEven(x);
-            System.out.println("i numeri moltiplicati sono pari a " +multipNumbers(x, y));
-        }
+public static void main (String[] args){
 
-        //Un metodo che preveda un valore in ingresso e
-// determini se quel valore è pari o dispari
-// e restituendo il tipo.
-        static void checkEven(int x) {
-            if(x%2 == 0) {
-                System.out.println(x + " e' pari.");
-                System.out.println(x + " e' pari, ma è un brutto numero.");
-                System.out.println(x + " e' pari, ma è forse è anche bello.");
-            }
-            else {
-                System.out.println(x + " e' dispari.");
-            }
-        }
+        System.out.println(divisionMethod(12,66));
+        System.out.println(moltiplicationMethod(13,6));
+        System.out.println(additionMethod(2,9));
+        System.out.println(subtrationMethod(34,8));
+}
 
-        //il metodo seguente restituisce il valore della moltiplicazione di due numeri
-        static int multipNumbers(int x, int y) {
-            return (x * y);
-        }
+    //metodo che definisce la divisione:
+    public static float divisionMethod(float firstValue, float secondValue){
+
+        return firstValue / secondValue;
+
     }
+    //metodo che definisce la moltiplicazione:
+    public static float moltiplicationMethod(float firstValue, float secondValue){
+
+        return firstValue * secondValue;
+
+    }
+    //metodo che definisce l'addizione:
+    public static float additionMethod(float firstValue, float secondValue){
+
+        return firstValue + secondValue;
+
+    }
+    //metodo che definisce la sottrazione:
+    public static float subtrationMethod ( float firstValue, float secondValue){
+
+        return firstValue - secondValue;
+
+    }
+}
+
+
+
