@@ -40,9 +40,9 @@ public static void main (String[] args){
         System.out.println("Sottrazione: " + risultatoSottrazione);
     }
 
-    public static int sottrazione(int valore1, int valore2) {
+public static int sottrazione(int valore1, int valore2) {
 
-          return valore1 - valore2;
+    return valore1 - valore2;
 
 
 
@@ -53,7 +53,25 @@ public static void main (String[] args){
         return firstValue - secondValue;
 
     }
+//Un metodo che preveda un valore in ingresso e
+// determini se quel valore è pari o dispari
+// e restituendo il tipo.
+static void checkEven(int x) {
+    if(x%2 == 0) {
+        System.out.println(x + " e' pari.");
+        System.out.println(x + " e' pari, ma è un brutto numero.");
+        System.out.println(x + " e' pari, ma è forse è anche bello.");
+    }
+    else {
+        System.out.println(x + " e' dispari.");
+    }
 }
+
+//il metodo seguente restituisce il valore della moltiplicazione di due numeri
+static int multipNumbers(int x, int y) {
+    return (x * y);
+}
+    }
 
 
 
@@ -78,5 +96,6 @@ public static void main (String[] args){
             return "OPERAZIONE NON SUPPORTATA";
         }
     }
+}
 }
 
