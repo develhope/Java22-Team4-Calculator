@@ -14,6 +14,8 @@ public class Main {
         static void checkEven(int x) {
             if(x%2 == 0) {
                 System.out.println(x + " e' pari.");
+                System.out.println(x + " e' pari, ma è un brutto numero.");
+                System.out.println(x + " e' pari, ma è forse è anche bello.");
             }
             else {
                 System.out.println(x + " e' dispari.");
